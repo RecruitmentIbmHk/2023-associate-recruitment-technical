@@ -4,6 +4,10 @@
 #include <vector>
 #include <iterator>
 
+bool canRequestBeFulfilled(int numTshirts, std::vector<std::string> tshirtsAvailable, int numRequests, std::vector<std::string> tshirtsRequest){
+
+}
+
 int main()
 {
     //get input
@@ -43,7 +47,10 @@ int main()
         TshirtsRequest.push_back(temp);
     }
 
+    if (canRequestBeFulfilled(totalNumTshirts, TshirtsAvailable, numOfShirtRequest, TshirtsRequest) == true)
+        std::cout << "Yes";
+    else
+        std::cout << "No";
     
-
     return 0;
 }
