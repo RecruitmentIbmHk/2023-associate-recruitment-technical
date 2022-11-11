@@ -4,17 +4,34 @@
 #include <vector>
 #include <iterator>
 
+enum rankShirtSize{
+    S = 1,
+    M = 2,
+    L = 3,
+};
+
+bool checkRequest(std::string tshirtRequest, std::vector<std::string> tshirtsAvailable){
+
+}
+
 bool canRequestBeFulfilled(int numTshirts, std::vector<std::string> tshirtsAvailable, int numRequests, std::vector<std::string> tshirtsRequest){
 
+
+    bool result = true;
     if (numRequests > numTshirts)
         return false;
     
     else{
-        
+        // compare 1 shirt request to tShirts available
+        for (int i = 0; i < numRequests; i++){
+            if (checkRequest(tshirtsRequest[i], tshirtsAvailable) == false)
+                result = false;
+        }
+
     }
 
 
-    return false;
+    return result;
 
 }
 
