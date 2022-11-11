@@ -8,13 +8,14 @@ int main()
 {
     //get input
     int totalNumTshirts;
-
     std::vector<std::string> TshirtsAvailable;
+    int numOfShirtRequest;
+    std::vector<std::string> TshirtsRequest;
 
     //number of t shirts
     std::cin >> totalNumTshirts;
 
-        //put t shirts available into a string vector
+    //put t shirts available into a string vector
     
     std::string tshirtAvailableString;
     
@@ -27,9 +28,20 @@ int main()
     }
 
     //number of request
-    int numOfShirtRequest;
     
     std::cin >> numOfShirtRequest;
+
+    //string of requests
+
+    std::string tshirtRequestString;
+    
+    std::cin >> tshirtRequestString;
+
+    std::stringstream TshirtRequestSS(tshirtRequestString);
+    std::string temp;
+    while (std::getline(TshirtRequestSS, temp, ' ')){
+        TshirtsRequest.push_back(temp);
+    }
 
     
 
