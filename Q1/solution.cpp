@@ -14,7 +14,7 @@ int main()
     //number of t shirts
     std::cin >> totalNumTshirts;
 
-    //put t shirts available into a string vector
+        //put t shirts available into a string vector
     
     std::string tshirtAvailableString;
     
@@ -25,6 +25,11 @@ int main()
     while (std::getline(TshirtAvailableSS, temp, ' ')){
         TshirtsAvailable.push_back(temp);
     }
+
+    //number of request
+    int numOfShirtRequest;
+    
+    std::cin >> numOfShirtRequest;
 
     
 
