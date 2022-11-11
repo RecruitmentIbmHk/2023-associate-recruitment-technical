@@ -6,6 +6,16 @@
 
 bool canRequestBeFulfilled(int numTshirts, std::vector<std::string> tshirtsAvailable, int numRequests, std::vector<std::string> tshirtsRequest){
 
+    if (numRequests > numTshirts)
+        return false;
+    
+    else{
+        
+    }
+
+
+    return false;
+
 }
 
 int main()
